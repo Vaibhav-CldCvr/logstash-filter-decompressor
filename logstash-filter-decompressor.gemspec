@@ -2,9 +2,9 @@ Gem::Specification.new do |s|
   s.name          = 'logstash-filter-decompressor'
   s.version       = '0.1.0'
   s.licenses      = ['Apache License (2.0)']
-  s.summary       = 'TODO: Write a short summary, because Rubygems requires one.'
-  s.description   = 'TODO: Write a longer description or delete this line.'
-  s.homepage      = 'TODO: Put your plugin''s website or public repo URL here.'
+  s.summary       = 'This filter does decompression in Logstash.'
+  s.description   = 'This gem is a logstash plugin required to be installed on top of the Logstash core pipeline using $LS_HOME/bin/logstash-plugin install gemname. This gem is not a stand-alone program'
+  s.homepage      = 'https://github.com/Vaibhav-CldCvr/logstash-filter-decompressor.git'
   s.authors       = ['']
   s.email         = ''
   s.require_paths = ['lib']
