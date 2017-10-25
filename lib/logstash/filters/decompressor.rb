@@ -2,7 +2,8 @@
 require "logstash/filters/base"
 require "logstash/namespace"
 
-# This  filter will replace the contents of the default 
+
+# This  filter will replace the contents of the default
 # message field with whatever you specify in the configuration.
 #
 # It is only intended to be used as an .
@@ -18,14 +19,14 @@ class LogStash::Filters::Decompressor < LogStash::Filters::Base
   # }
   #
   config_name "decompressor"
-  
+
   # Replace the message with this value.
   config :message, :validate => :string, :default => "Hello World!"
-  
+
 
   public
   def register
-    # Add instance variables 
+    # Add instance variables
   end # def register
 
   public
@@ -35,6 +36,7 @@ class LogStash::Filters::Decompressor < LogStash::Filters::Base
       # Replace the event message with our message as configured in the
       # config file.
       event.set("message", @message)
+
     end
 
     # filter_matched should go in the last line of our successful code
